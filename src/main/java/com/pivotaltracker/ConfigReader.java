@@ -26,4 +26,12 @@ public class ConfigReader {
     public String getApiUrl() {
         return properties.getProperty("apiURL");
     }
+
+    public String getUserEmail() {
+        return properties.getProperty("userEmail");
+    }
+
+    public String getUserPassword() {
+        return properties.getProperty("userPassword");
+    }
 }
