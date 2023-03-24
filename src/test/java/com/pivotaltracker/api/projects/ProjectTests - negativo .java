@@ -20,7 +20,7 @@ public class ProjectTests {
 
         String bodyContent = """
                 {
-                    "name": "Automation"
+                    "name": ""
                 }
                 """;
 
@@ -43,7 +43,7 @@ public class ProjectTests {
 
         Assert.assertEquals(actualProjectName, expectedProjectName);
     }
-
+// se adiciono la prueba negativa;
     @AfterMethod
     public void deleteProject() {
         String endpoint = "projects/" + projectId;
