@@ -38,7 +38,7 @@ public class ProjectNegativeTests {
                 .body(JsonSchemaValidator.matchesJsonSchema(schemaFile));
 
         String actualProjectName = response.jsonPath().getString("name");
-        String expectedProjectName = "null";
+        String expectedProjectName = null;
 
         Assert.assertEquals(actualProjectName, expectedProjectName);
     }
