@@ -11,7 +11,7 @@ public class ProjectNegativeTests {
         String endpoint = "https://www.pivotaltracker.com/services/v5/projects";
         String bodyContent = """
                 {
-                    "name": " "
+                    "name": ""
                 }
                 """;
         Response response = RestAssured.given()
@@ -25,7 +25,7 @@ public class ProjectNegativeTests {
 
         Assert.assertEquals(actualStatusCode,expectedStatusCode);
         String actualProjectName  = response.jsonPath().getString("name");
-        String expectedProjectName = " ";
+        String expectedProjectName = "";
 
         Assert.assertEquals(actualProjectName,expectedProjectName);
 
