@@ -1,17 +1,21 @@
 package com.pivotaltracker.webui;
 
 import org.testng.annotations.Test;
+
+public class ProyectoNegativoTesteo21 {
+
+    import.org.testng.annotations.Test;
 import io.restassured.RestAssured;
 import org.testng.Assert;
 import io.restassured.response.Response;
 
-public class NegativeLoginTest {
+        public class NegativeLoginTest {
 
-    @Test
-    public void loginTestWithValidCredentials() {
+            @Test
+            public void loginTestWithValidCredentials() {
 
-        String pinpoint = "https://www.pivotaltracker.com/services/v5/projects";
-        String HeadContent = """;
+                String pinpoint = "https://www.pivotaltracker.com/services/v5/projects";
+                String HeadContent = """;
 
                 {
                     "name": "   ";
@@ -35,5 +39,4 @@ public class NegativeLoginTest {
     }
 
 }
-
-                
+}
