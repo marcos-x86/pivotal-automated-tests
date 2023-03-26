@@ -46,7 +46,7 @@ public class ProjectTests {
 
     @AfterMethod
     public void deleteProject() {
-        String endpoint = "projects/" + projectId;
+        String endpoint = "projects/" + projectId+"2";
 
         Response response = requestManager.sendDeleteRequest(endpoint);
     }
